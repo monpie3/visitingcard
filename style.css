@@ -1,126 +1,162 @@
-:root{
-    --background-color:rgb(251, 251, 234);
-    --hover-color:rgb(255, 224, 115);
-    --element-color:rgb(255, 224, 62, 0.2);
+:root {
+    --background-color: rgb(251, 251, 234);
+    --hover-color: rgb(255, 224, 115);
+    --element-color: rgb(255, 224, 62, 0.2);
+    --hover-color-darker: rgb(253,135,0);
 }
-body{
-    margin:0;
-    padding:0;
+
+html {
     box-sizing: border-box;
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
+}
+
+body {
     background-image: url('photo/beige-watercolor-23.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position:center;
+    background-position: center;
 }
 
-.title{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
 }
 
-.content{
+.content {
     text-align: center;
     background-color: var(--element-color);
+    border-radius: 6px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
     font-family: Lato, Montserrat, sans-serif;
+    max-width: 1200px;
 }
 
-.aboutme{
-    margin-top:20px;
+.content h1 {
+    padding-bottom: 30px;
+}
+
+.portf h1 {
+    padding: 5px;
+}
+
+.about-me {
+    margin-top: 50px;
 }
 
 /* MENU */
-.menu{
-    padding:10px;
+.menu {
+    padding: 10px;
     background-color: transparent;
     border: none;
 }
 
 /* NAVIAGATION BAR */
-.nav a{
+.nav a {
     width: 100%;
     text-align: center;
     text-decoration: none;
     padding: 10px 5px;
-    color:black;
-    display:inline-block;
+    color: black;
+    display: inline-block;
     background: var(--background-color);
     transition: all 0.5s;
 }
-
-.nav a:visited{
-    color:black;
+.nav a:visited {
+    color: black;
 }
 .nav a:hover {
     background: var(--hover-color);
 }
-
-.nav-bar{
+.nav-bar {
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
-    z-index: 99999999999999999999999;
+    z-index: 9;
     box-shadow: 3px 3px 6px orange;
 }
 
-.toggle-area{
+.toggle-area {
     display: none;
 }
-
 .toggle-area label {
-    cursor:pointer; 
+    cursor: pointer; 
 }
-
-.toggle{
-    display:none;   
+.toggle {
+    display: none;   
 }
 
   /* Flex Container */
-.nav ul{
+.nav ul {
     width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
-    display:flex;
-    border:3px double black;
+    display: flex;
+    border: 3px double black;
 }
-  
   /* Flex Item */
 .nav li {
-     flex:1;
+     flex: 1;
 }
   
 
 /* PORTFOLIO */
+.fas {
+    color: rgba(0,0,0,0.9);
+    padding: 15px;
+}
+.fas:visited {
+    color: rgba(0,0,0,0.9);
+}
+.fas:hover {
+    color: var(--hover-color-darker);
+}
+
+.far {
+    color: var(--hover-color-darker);
+}
+.far:visited {
+    color: var(--hover-color-darker);
+}
+.far:hover {
+    color: rgba(0,0,0,0.8);
+}
+
 /* Flex Container */
 .portfolio {
     display: flex;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
     align-items: center;
 }
 /* Flex Item */
 .portf {
-    flex:1;
+    flex: 1;
     background-color: var(--element-color);
     margin: 0 15px;
-    padding: 0 20px;
+    padding: 0px 20px 10px 20px;
     border-radius: 6px;
     text-align: center;
 }
 
     @media all and (max-width:850px) {
-        .portfolio{
+        .portfolio {
             flex-flow: row wrap; 
         }
 
-        .portf{
+        .portf {
             margin: 10px 10px;
-           min-width: 300px;
+            min-width: 300px;
         }
-
     }
 
   @media all and (max-width:500px) {
@@ -129,32 +165,32 @@ body{
       }
 
     .nav ul {
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         border: none;
       }
     
     .nav li {
-      flex-basis:100%;
+      flex-basis: 100%;
     }
 
-    .nav{
-        display:none;
+    .nav {
+        display: none;
         flex-direction: column;
       }
 
-    .toggle:checked + .nav{
-        display:flex;
+    .toggle:checked + .nav {
+        display: flex;
     }
 
-    .toggle-area{
-        display:flex;
-        flex:1;
+    .toggle-area {
+        display: flex;
+        flex: 1;
         padding: 2px;
         justify-content: center;
-        background-color:  var(--background-color);
+        background-color: var(--background-color);
     }
     
-    .nav a{
+    .nav a {
         padding: 2px;
     }
   }  
