@@ -1,48 +1,80 @@
-html{
-    box-sizing: border-box;
+:root{
+    --background-color:rgb(251, 251, 234);
+    --hover-color:rgb(255, 224, 115);
+    --element-color:rgb(255, 224, 62, 0.2);
 }
-
-*, *:before, *:after{
-    box-sizing:inherit;
-}
-
 body{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+    box-sizing: inherit;
     background-image: url('photo/beige-watercolor-23.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:center;
-    font-family: Lato, Montserrat, sans-serif;
 }
 
-h1,h2,header{
+.title{
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
 }
 
-.aboutme{
-    margin-top:62px;
+.content{
+    text-align: center;
+    background-color: var(--element-color);
+    padding: 20px;
+    margin: 20px 0;
+    font-family: Lato, Montserrat, sans-serif;
 }
 
+.aboutme{
+    margin-top:20px;
+}
+
+/* MENU */
+.menu{
+    padding:10px;
+    background-color: transparent;
+    border: none;
+}
 
 /* NAVIAGATION BAR */
-a {
+.nav a{
     width: 100%;
     text-align: center;
     text-decoration: none;
     padding: 10px 5px;
     color:black;
     display:inline-block;
-    background: rgb(251, 251, 234);
+    background: var(--background-color);
     transition: all 0.5s;
 }
 
-a:visited{
+.nav a:visited{
     color:black;
 }
-a:hover {
-    background: rgb(255, 224, 115);
+.nav a:hover {
+    background: var(--hover-color);
+}
+
+.nav-bar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 99999999999999999999999;
+    box-shadow: 3px 3px 6px orange;
+}
+
+.toggle-area{
+    display: none;
+}
+
+.toggle-area label {
+    cursor:pointer; 
+}
+
+.toggle{
+    display:none;   
 }
 
   /* Flex Container */
@@ -53,32 +85,13 @@ a:hover {
     padding: 0;
     display:flex;
     border:3px double black;
-  }
+}
   
-  header{
-      position: fixed;
-      top:0;
-      width: 100%;
-      z-index: 99999999999999999999999;
-      box-shadow: 3px 3px 6px orange;
-  }
   /* Flex Item */
-  .nav li {
-    flex:1;
-  }
+.nav li {
+     flex:1;
+}
   
-  .toggle-area{
-      display: none;
-  }
-
-.toggle-area label {
-    cursor:pointer; 
-}
-
-.toggle{
-    display:none;
-    
-}
 
 /* PORTFOLIO */
 /* Flex Container */
@@ -91,38 +104,33 @@ a:hover {
 /* Flex Item */
 .portf {
     flex:1;
-    background-color: rgb(255, 224, 62, 0.2);
-    margin:20px;
-    padding: 20px;
-    border-radius: 3px;
+    background-color: var(--element-color);
+    margin: 0 15px;
+    padding: 0 20px;
+    border-radius: 6px;
     text-align: center;
 }
 
-/* FOOTER */
-footer, section{
-   text-align: center;
-   background-color: rgb(255, 224, 62, 0.2);
-   padding: 20px;
-   margin: 20px 0;
-}
+    @media all and (max-width:850px) {
+        .portfolio{
+            flex-flow: row wrap; 
+        }
 
-.portfolio {
-    background-color: transparent;
-}
+        .portf{
+            margin: 10px 10px;
+           min-width: 300px;
+        }
 
-img{
-    width: 100%;
-}
-  
+    }
+
   @media all and (max-width:500px) {
-      header {
+     .nav-bar {
         box-shadow: 1px 1px 3px black;
       }
 
     .nav ul {
         flex-wrap:wrap;
         border: none;
-       
       }
     
     .nav li {
@@ -143,10 +151,11 @@ img{
         flex:1;
         padding: 2px;
         justify-content: center;
-        background-color:  rgb(251, 251, 234);
+        background-color:  var(--background-color);
     }
     
-    a{
+    .nav a{
         padding: 2px;
     }
   }  
+  
