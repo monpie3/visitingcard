@@ -11,13 +11,20 @@ body{
     padding:0;
     background-image: url('photo/beige-watercolor-23.jpg');
     background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position:center;
+    background-attachment: fixed;
+    background-position:center;
+    font-family: Lato, Montserrat, sans-serif;
+}
+
+h1,h2,header{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
 }
 
 .aboutme{
     margin-top:62px;
 }
+
 
 /* NAVIAGATION BAR */
 a {
@@ -25,12 +32,15 @@ a {
     text-align: center;
     text-decoration: none;
     padding: 10px 5px;
+    color:black;
     display:inline-block;
     background: rgb(251, 251, 234);
     transition: all 0.5s;
-   
 }
 
+a:visited{
+    color:black;
+}
 a:hover {
     background: rgb(255, 224, 115);
 }
@@ -70,6 +80,23 @@ a:hover {
     
 }
 
+/* PORTFOLIO */
+/* Flex Container */
+.portfolio {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    align-items: center;
+}
+/* Flex Item */
+.portf {
+    flex:1;
+    background-color: rgb(255, 224, 62, 0.2);
+    margin:20px;
+    padding: 20px;
+    border-radius: 3px;
+    text-align: center;
+}
 
 /* FOOTER */
 footer, section{
@@ -79,6 +106,9 @@ footer, section{
    margin: 20px 0;
 }
 
+.portfolio {
+    background-color: transparent;
+}
 
 img{
     width: 100%;
