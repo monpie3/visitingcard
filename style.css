@@ -52,12 +52,16 @@ body {
     margin-top: 50px;
 }
 
+
+
 /* MENU */
 .menu {
     padding: 10px;
     background-color: transparent;
     border: none;
 }
+
+
 
 /* NAVIAGATION BAR */
 .nav a {
@@ -108,8 +112,9 @@ body {
      flex: 1;
 }
 
-/* SKILLS */
 
+
+/* SKILLS */
 .color-box {
     padding: 0;
     margin: 0 auto;
@@ -117,7 +122,7 @@ body {
 }
 .box {
     height: 100px;
-    max-width: 500px;
+    max-width: 600px;
     position: relative;
     width: auto;
 }
@@ -127,7 +132,7 @@ div.orange {
     border: 1px dashed black;
     z-index: 3;
     margin-top: 0px;
-    right: 30px
+    right: 35px
 }
 div.hover-color {
     background-color: var(--hover-color);
@@ -141,64 +146,14 @@ div.background-color {
     opacity: 0.9;
     border: 1px dashed black;
     top: -90px;
-    left: 30px;
+    left: 35px;
     z-index: 2;
 }
 .skills .fas {
     color: rgba(0,0,0,0.9);
 }
-/* EVENTS */
-/* Container */
-.gallery {
-    max-height: 900px;
-    max-width: 800px;
-    margin:0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    align-content: center;
-    background-color: var(--element-color);
-    padding: 90px 40px 40px 40px;
-}
-.gallery img{
-    height: auto;
-    width: 100%;
-}
 
-img.dog3 {
-    flex: 1;
-    justify-content: center;
-    align-content: center;
-}
-img.dog2,img.dog1  {
-    flex: 1;
-    width: 30%;
-    justify-content: center;
-    align-content: center;
-}
 
-.skills {
-    margin-bottom: 0px;
-}
-.events {
-    background: transparent;
-    margin-top: -35px;
-    padding-top: 0px;
-    padding-bottom: 5px;
-}
-.events .title {
-    position: relative;
-    top: 80px;
-}
-.event-button button {
-    display: inline-block;
-    text-decoration: none;
-    background: none;
-    border: 2px solid orange;
-    text-transform: uppercase;
-    background: rgba(0,0,0,0.7);
-    padding: 5px;
-}
 
 /* PORTFOLIO */
 .portfolio .fas {
@@ -226,11 +181,63 @@ img.dog2,img.dog1  {
     transform: scale(0.9);
 }
 
+
+/* EVENTS */
+/* Container */
+.gallery {
+    max-height: 900px;
+    max-width: 800px;
+    margin:0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-content: center;
+    background-color: var(--element-color);
+    padding: 90px 40px 40px 40px;
+    position: relative;
+}
+.gallery img{
+    height: auto;
+    width: 100%;
+}
+
+img.dog3 {
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+}
+img.dog2,img.dog1  {
+    flex: 1;
+    width: 30%;
+    justify-content: center;
+    align-content: center;
+}
+
+.gallery .caption {
+    position: absolute;
+    background-color: var(--background-color);
+    top: 50%;
+    left: 50%;
+}
+
+.events {
+    background: transparent;
+    margin-top: -35px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+.events .title {
+    position: relative;
+    top: 80px;
+}
+
+
+
 /* Flex Container */
 .portfolio {
     display: flex;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
     align-items: center;
 }
 /* Flex Item */
@@ -242,6 +249,9 @@ img.dog2,img.dog1  {
     border-radius: 6px;
     text-align: center;
 }
+
+
+
 
     @media all and (max-width:850px) {
         .portfolio {
