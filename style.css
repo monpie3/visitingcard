@@ -128,7 +128,6 @@ p.quote {
     margin: 0;
     padding: 0;
     display: flex;
-    border: 3px double black;
 }
   /* Flex Item */
 .nav li {
