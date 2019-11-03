@@ -148,7 +148,7 @@ p.quote {
     0%   { top: -500px}
     100% { top: 0px}
     from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    to   {transform:rotate(360deg);}
 }
 
 
@@ -157,7 +157,7 @@ p.quote {
 .gallery {
     max-height: 900px;
     max-width: 800px;
-    margin:0 auto;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-items: center;
