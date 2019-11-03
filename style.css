@@ -40,6 +40,28 @@ body {
     max-width: 1200px;
 }
 
+.color-box {
+    letter-spacing: 3.7px;
+}
+
+p.skills-text {
+    text-align: justify;
+}
+p.quote {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px dashed black;
+    text-align-last: right;
+}
+.quote em {
+    line-height: 1.5em;
+    letter-spacing: 1.0px;
+}
+
+.quote strong {
+    background-color: var(--hover-color);
+}
+
 .content h1 {
     padding-bottom: 30px;
 }
@@ -111,7 +133,6 @@ body {
 .nav li {
      flex: 1;
 }
-
 
 
 /* SKILLS */
@@ -218,6 +239,7 @@ img.dog2,img.dog1  {
     background-color: var(--background-color);
     top: 50%;
     left: 50%;
+    width: 100%;
 }
 
 .events {
