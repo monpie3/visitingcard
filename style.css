@@ -139,7 +139,19 @@ p.quote {
     max-width: 200px;
     height: auto;
     padding-bottom: 20px;
+    position: relative;
+    animation: pumpkin;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes pumpkin {
+    0%   { top: -500px}
+    100% { top: 0px}
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
 
 /* EVENTS */
 /* Container */
@@ -155,7 +167,7 @@ p.quote {
     padding: 90px 40px 40px 40px;
     position: relative;
 }
-.gallery img{
+.gallery img {
     height: auto;
     width: 100%;
 }
@@ -182,7 +194,7 @@ img.dog2,img.dog1  {
 
 .events {
     background: transparent;
-    margin-top: -35px;
+    margin-top: -50px;
     padding-top: 0px;
     padding-bottom: 5px;
 }
@@ -249,7 +261,13 @@ img.dog2,img.dog1  {
     max-width: 600px;
     position: relative;
     width: auto;
+    transition: transform 0.5s ease-in-out;
 }
+
+.box:hover {
+    transform: rotate(-5deg);
+}
+
 div.orange {
     background-color: var(--hover-color-darker);
     opacity: 0.9;
@@ -283,7 +301,7 @@ div.background-color {
      padding: 10px;
  }
 
-    @media all and (max-width:850px) {
+    @media all and (max-width:900px) {
         .portfolio {
             flex-flow: row wrap; 
         }
@@ -295,7 +313,12 @@ div.background-color {
         .column2 {
             order: -1;
         }
+        .events{
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
+
 
   @media all and (max-width:500px) {
      .nav-bar {
@@ -330,6 +353,12 @@ div.background-color {
     
     .nav a {
         padding: 2px;
+    }
+
+    .portf {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 500px;
     }
   }  
   
