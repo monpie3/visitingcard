@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-image: url('photo/beige-watercolor-23a.jpg');
+    background-image: url('./photo/beige-watercolor-23a.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -35,20 +35,31 @@ body {
     text-align: center;
     background-color: var(--element-color);
     border-radius: 6px;
-    padding: 40px;
-    margin: 20px auto;
     font-family: Lato, Montserrat, sans-serif;
     max-width: 1200px;
+    padding: 40px 20px 30px 20px;
+    margin: 40px auto;
+
+}
+.portfolio{
+    padding-top: 40px;
+    margin: 40px auto;
+    margin-top: 10px;
+}
+
+.events{
+    margin-bottom: 10px;
 }
 
 .color-box {
     letter-spacing: 3.7px;
 }
 
-p.skills-text {
+.skills-text {
     text-align: justify;
 }
-p.quote {
+
+.quote {
     margin-top: 20px;
     padding: 10px;
     border: 1px dashed black;
@@ -65,10 +76,17 @@ p.quote {
 
 .content h1 {
     padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 .portf h1 {
-    padding: 5px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.column2 .title {
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .about-me {
@@ -79,9 +97,7 @@ p.quote {
 
 /* MENU */
 .menu {
-    padding: 10px;
     background-color: transparent;
-    border: none;
 }
 
 
@@ -137,33 +153,31 @@ p.quote {
 /* ABOUT */
 .about-me img {
     max-width: 200px;
-    height: auto;
     padding-bottom: 20px;
+    height: auto;
     position: relative;
     animation: pumpkin;
     animation-duration: 3s;
 }
 
 @keyframes pumpkin {
-    0%   { top: -500px}
-    100% { top: 0px}
-    from {transform:rotate(0deg);}
-    to   {transform:rotate(360deg);}
+    0%   { top: -500px; }
+    100% { top: 0px; }
+    from { transform:rotate(0deg); }
+    to   { transform:rotate(360deg); }
 }
 
 
 /* EVENTS */
 /* Container */
 .gallery {
-    max-height: 900px;
     max-width: 800px;
-    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     justify-items: center;
     align-content: center;
     background-color: var(--element-color);
-    padding: 90px 40px 40px 40px;
+    margin: 0 auto;
 }
 
 .dog3 {
@@ -207,14 +221,7 @@ p.quote {
 }
 
 .events {
-    background: transparent;
-    margin-top: -50px;
-    padding-top: 0px;
-    padding-bottom: 5px;
-}
-.events .title {
-    position: relative;
-    top: 80px;
+    max-width: 900px;
 }
 
 
@@ -223,7 +230,7 @@ p.quote {
 /* PORTFOLIO */
 .portfolio .fas {
     color: rgba(0,0,0,0.9);
-    padding: 15px;
+    padding: 10px;
     transition: transform 0.2s ease-in-out;
 }
 .portfolio .fas:visited {
@@ -249,7 +256,6 @@ p.quote {
 /* Flex Container */
 .portfolio {
     display: flex;
-    margin: 0 auto;
     max-width: 1000px;
     align-items: center;
 }
@@ -257,18 +263,17 @@ p.quote {
 .portf {
     flex: 1;
     background-color: var(--element-color);
-    margin: 0 15px;
-    padding: 0px 20px 10px 20px;
     border-radius: 6px;
+    margin: 0 15px;
+    padding: 0px 20px 20px 20px;
     text-align: center;
 }
 
 
 /* SKILLS */
 .color-box {
-    padding: 0;
-    margin: 0 auto;
     height: 280px;
+    padding-bottom: 40px;
 }
 .box {
     height: 100px;
@@ -282,7 +287,8 @@ p.quote {
     transform: rotate(-5deg);
 }
 
-div.orange {
+/* to present z-index */
+.orange {
     background-color: var(--hover-color-darker);
     opacity: 0.9;
     border: 1px dashed black;
@@ -290,18 +296,18 @@ div.orange {
     margin-top: 0px;
     right: 35px
 }
-div.hover-color {
+.hover-color {
     background-color: var(--hover-color);
     border: 1px dashed black;
-    top: -45px;
+    top: -60px;
     left: 0px;
     z-index: 1;
 }
-div.background-color {
+.background-color {
     background-color: var(--background-color);
     opacity: 0.9;
     border: 1px dashed black;
-    top: -90px;
+    top: -120px;
     left: 35px;
     z-index: 2;
 }
@@ -311,53 +317,62 @@ div.background-color {
 
 
 /* FOOTER */
- .page-footer {
-     padding: 10px;
- }
+.page-footer {
+    padding: 5px;
+}
 
-    @media all and (max-width:900px) {
-        .portfolio {
-            flex-flow: row wrap; 
-        }
 
-        .portf {
-            margin: 10px 10px;
-            min-width: 300px;
-        }
-        .column2 {
-            order: -1;
-        }
-        .events{
-            padding-left: 0;
-            padding-right: 0;
-        }
+@media all and (max-width:900px) {
+
+    .portfolio {
+        flex-flow: row wrap; 
+    }
+    .portf {
+        margin: 10px 10px;
+        min-width: 300px;
+    }
+    .column2 {
+        order: -1;
+    }
+    .events {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+@media all and (max-width:750px) {
+
+    .dog2 {
+        display: none;
+    }
+    .dog1 {
+        width: 100%;
+        min-height: 250px;
+    }
+    .dog3 {
+        min-height: 200px;
     }
 
-
-    @media all and (max-width:750px) {
-        .dog2 {
-            display: none;
-        }
-        .dog1 {
-            width: 100%;
-            min-height: 250px;
-        }
-        .dog3 {
-            min-height: 200px;
-        }
-
+    .orange {
+        right: 20px
     }
+    .background-color {
+        left: 20px;
+    }  
+}
 
 
-  @media all and (max-width:500px) {
-     .nav-bar {
+@media all and (max-width:500px) {
+
+    .nav-bar {
         box-shadow: 1px 1px 3px black;
-      }
+    }
 
     .nav ul {
         flex-wrap: wrap;
         border: none;
-      }
+    }
     
     .nav li {
       flex-basis: 100%;
@@ -366,7 +381,7 @@ div.background-color {
     .nav {
         display: none;
         flex-direction: column;
-      }
+    }
 
     .toggle:checked + .nav {
         display: flex;
@@ -387,12 +402,28 @@ div.background-color {
     .portf {
         margin-left: 0;
         margin-right: 0;
-        max-width: 500px;
+    }
+    .column2 {
+        margin-top:0px;
+        margin-bottom: 20px;
+    }
+    .column1 {
+        margin-top:20x;
+        margin-bottom: 20px;
+    }
+    .column3 {
+        margin-top:20px;
+        margin-bottom: 0px;
     }
 
     .about-me {
         margin-top: 50px;
     }
-    
-  }  
-  
+
+    .orange {
+        right: 15px
+    }
+    .background-color {
+        left: 15px;
+    }  
+}
