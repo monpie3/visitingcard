@@ -12,14 +12,23 @@
 
 <body>
     <div class="wrapper">
-        <header class="nav-bar">
-            <div class="toggle-area title">
-                <label for="toggle"> 
-                ☴ Menu
-                </label>
-            </div>
+
+        <! -- that contains all navigation -->
+        <header class="nav-bar"> 
+
+            <! -- only when width-size below 500 px -->
             <input type="checkbox" class="toggle" id="toggle">
-            <nav class="nav title">
+                <label for="toggle"> 
+                    <div class="toggle-area"> 
+                        <i class="fas fa-bars" id="open"></i>
+                        <i class="fas fa-times" id="close"></i>
+                        <span class="title"> Menu </span>
+                    </div>
+                </label>
+            
+
+            <! -- navigation -->
+            <nav class="title">
                 <ul>
                     <li><a href="#about-me">About me</a></li>
                     <li><a href="#events">Events</a></li>
@@ -83,7 +92,7 @@
             </section>
         </main>
         <footer class="content page-footer">
-            <p>© VisitingCard. Monika Pierzchała</p>
+            <p>© VisitingCard. Monika Pierzchała. 2019/2020</p>
         </footer>
     </div>
 </body>
