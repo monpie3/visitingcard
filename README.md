@@ -1,0 +1,18 @@
+Projekt robiony w ramach kursu CodersCamp
+
+W projekcie nalezało zaprezentować praktyczną znajomość poniższych zagadnień związanych z HTML & CSS:
+- [x] Box-model
+- [ ] Kaskadowość CSS
+- [x] Selektory CSS
+- [x] Popularne tagi HTML
+- [x] Jak podpinać CSSa do HTMLa
+- [x] Zapisywanie kolorów
+- [x] Stylowanie tekstu
+- [x] Zewnętrzne ikony/fonty (fontawesome, google fonts)
+- [x] Flexbox i/lub CSS Grid
+- [x] Position (absolute, relative)
+- [x] Animacje keyframes
+- [ ] Formularz (wysłanie formularza może powodować przeładowanie strony, gdyż w kursie nie było jeszcze jego obsługi)
+- [x] Responsive Web Design
+
+Ograniczeniem projektu było nie używanie JavaScriptu ani żadnego innego frameworka. Nie używano także gotowych bibliotek styli takich jak Bootstrap.
