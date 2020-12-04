@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Visiting Card</title>
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab:100" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/4d34a12f9d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Visiting Card</title>
 </head>
 
 <body>
@@ -89,8 +89,38 @@
             <section id="contact" class="content contact">
                 <h1 class="title">Contact</h1>
                 <p>Łabędzie znane są ze swojego niekonwencjonalnego sposobu odchodzenia na zawsze. W chwili, gdy na horyzoncie zaczyna zarysowywać się ich koniec, znajdują największy głaz jaki zmieści im się w dziobie i połykają go. Spokojnie i powoli opadają na dno zostawiając znany im świat na rzecz tego podwodnego.</p>
+                
+                <div class="form-wrapper"> 
+                    <h1 class="title">Formularz kontaktowy</h1>
+                    <form method="post" action="" id="contact_form" class="form-container">
+                        <div class="form-name">
+                            <label for="name">Imię i nazwisko:</label>
+                            <input type="text" name="name" id="name" class="formField" />
+                        </div>
+
+                        <div class="form-phone">
+                            <label for="phone">Numer telefonu:</label>
+                            <input type="tel" name="phone" id="phone" class="formField" />
+                        </div>
+
+                        <div class="form-email">
+                            <label for="email">Adres email:</label>
+                            <input type="email" name="email" id="email" class="formField" />
+                        </div>
+            
+                        <div class="form-message">
+                            <label for="message">Treść wiadomości:</label>
+                            <textarea name="message" id="message" class="formField" placeholder="Sorry, I'm not working because this project is limited to HTML and CSS only." required></textarea>
+                        </div>
+
+                        <div class="form-submit">
+                            <input type="submit" value="Wyślij">
+                        </div>    
+                    </form>
+                </div>    
             </section>
         </main>
+        
         <footer class="content page-footer">
             <p>© VisitingCard. Monika Pierzchała. 2019/2020</p>
         </footer>

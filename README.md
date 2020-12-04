@@ -12,7 +12,10 @@ W projekcie nalezało zaprezentować praktyczną znajomość poniższych zagadni
 - [x] Flexbox i/lub CSS Grid
 - [x] Position (absolute, relative)
 - [x] Animacje keyframes
-- [ ] Formularz (wysłanie formularza może powodować przeładowanie strony, gdyż w kursie nie było jeszcze jego obsługi)
+- [x] Formularz (wysłanie formularza może powodować przeładowanie strony, gdyż w kursie nie było jeszcze jego obsługi)
 - [x] Responsive Web Design
+
+Dodatkowo: 
+- [ ] Metodologia BEM
 
 Ograniczeniem projektu było nie używanie JavaScriptu ani żadnego innego frameworka. Nie używano także gotowych bibliotek styli takich jak Bootstrap.
