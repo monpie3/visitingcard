@@ -2,7 +2,7 @@ Projekt robiony w ramach kursu CodersCamp
 
 W projekcie nalezało zaprezentować praktyczną znajomość poniższych zagadnień związanych z HTML & CSS:
 - [x] Box-model
-- [ ] Kaskadowość CSS
+- [x] Kaskadowość CSS
 - [x] Selektory CSS
 - [x] Popularne tagi HTML
 - [x] Jak podpinać CSSa do HTMLa

@@ -14,12 +14,12 @@
     <div class="wrapper">
 
         <! -- that contains all navigation -->
-        <header class="nav-bar"> 
+        <header class="menu"> 
 
             <! -- only when width-size below 500 px -->
-            <input type="checkbox" class="toggle" id="toggle">
-                <label for="toggle"> 
-                    <div class="toggle-area"> 
+            <input type="checkbox" class="menu__toggle" id="menu__toggle">
+                <label for="menu__toggle"> 
+                    <div class="menu__toggle-area"> 
                         <i class="fas fa-bars" id="open"></i>
                         <i class="fas fa-times" id="close"></i>
                         <span class="title"> Menu </span>
@@ -28,7 +28,7 @@
             
 
             <! -- navigation -->
-            <nav class="title">
+            <nav class="menu__list title">
                 <ul>
                     <li><a href="#about-me">About me</a></li>
                     <li><a href="#events">Events</a></li>
@@ -42,32 +42,34 @@
             <section id="about-me" class="content about-me">
                 <h1 class="title">About me</h1>
                 <img src="photo/about.png">
-                <p>Łabędzie znane są ze swojego niekonwencjonalnego sposobu odchodzenia na zawsze. W chwili, gdy na horyzoncie zaczyna zarysowywać się ich koniec, znajdują największy głaz jaki zmieści im się w dziobie i połykają go. Spokojnie i powoli opadają na dno zostawiając znany im świat na rzecz tego podwodnego.</p>
+                <p>Łabędzie znane są ze swojego niekonwencjonalnego sposobu odchodzenia na zawsze.</p>
+                <p>W chwili, gdy na horyzoncie zaczyna zarysowywać się ich koniec, znajdują największy głaz jaki zmieści im się w dziobie i połykają go. </p>
+                <p>Spokojnie i powoli opadają na dno zostawiając znany im świat na rzecz tego podwodnego.</p>
             </section>
             <section id="events" class="content events">
                 <h1 class="title">Events</h1>
-                <div class="gallery">
-                    <div class="dog3"><div class="caption"> Hello </div></div>
-                    <div class="dog2"></div>
-                    <div class="dog1"></div>
+                <div class="events__gallery">
+                    <div class="events__img1"><div class="events__caption"> Hello </div></div>
+                    <div class="events__img2"></div>
+                    <div class="events__img3"></div>
                 </div>
             </section>
             <section id="portfolio" class="portfolio">
-                <div class="portf column1">
+                <div class="content portfolio__column1">
                     <h1 class="title">Signal Processing</h1>
                     <a href="https://www.google.com" target="_blank"> 
                         <i class="fas fa-heartbeat fa-7x"></i>
                     </a>
                     <p>Łabędzie znane są ze swojego niekonwencjonalnego sposobu odchodzenia na zawsze. Spokojnie i powoli opadają na dno zostawiając znany im świat na rzecz tego podwodnego.</p>
                 </div>
-                <div class="portf column2">
+                <div class="content portfolio__column2">
                     <h1 class="title">Braille Alphabet</h1>
                     <a href="https://www.google.com" target="_blank"> 
                         <i class="far fa-eye fa-9x"></i> 
                     </a>
                     <p>Łabędzie znane są ze swojego niekonwencjonalnego sposobu odchodzenia na zawsze. W chwili, gdy na horyzoncie zaczyna zarysowywać się ich koniec, znajdują największy głaz jaki zmieści im się w dziobie i połykają go. Spokojnie i powoli opadają na dno zostawiając znany im świat na rzecz tego podwodnego.</p>
                 </div>
-                <div class="portf column3">
+                <div class="content portfolio__column3">
                     <h1 class="title">Datebase</h1>
                     <a href="https://www.google.com" target="_blank">
                         <i class="fas fa-file-medical-alt fa-7x"></i>
@@ -77,43 +79,43 @@
             </section>
             <section id="skills" class="content skills">
                 <h1 class="title">Skills</h1>
-                <div class="color-box">
-                    <div class="box orange content"> Hello </div>
-                    <div class="box hover-color content"> Autumn </div>
-                    <div class="box background-color content"> <i class="fas fa-umbrella"></i> </div>
+                <div class="skills__boxes">
+                    <div class="content skills__box skills__box--orange "> Hello </div>
+                    <div class="content skills__box skills__box--hover-color"> Autumn </div>
+                    <div class="content skills__box skills__box--background-color"> <i class="fas fa-umbrella"></i> </div>
                 </div>
-                <p class="skills-text">Jesień – jedna z czterech podstawowych pór roku w przyrodzie, w strefie klimatu umiarkowanego. Jesień to czas zmian w przyrodzie. W świecie zwierząt jest to okres gromadzenia zapasów przed kolejną zimą lub przenoszenia się do cieplejszych stref klimatycznych. Zmieniające kolor liście przygotowują się do opadu, a najgrubsze części zielone roślin ulegają zdrewnieniu. Rośliny wieloletnie gromadzą substancje zapasowe w korzeniach, a jednoroczne doprowadzają do rozproszenia nasion i usychają. Wyjątkowe piękno jesiennej przyrody inspiruje do działań na rzecz jej ochrony.</p> 
-                <p class="skills-text">Charakteryzuje się <strong>umiarkowanymi</strong> temperaturami powietrza z malejącą średnią dobową, oraz (w przypadku Polski) stosunkowo <strong>dużym</strong> w skali roku opadem atmosferycznym. Pomimo obniżającej się temperatury powietrza, krótszych dni oraz stosunkowo dużego opadu atmosferycznego, to niezwykle urokliwa pora roku, nie bez przyczyny w Polsce często nazywana „złotą". Zmieniające kolor liście drzew tworzą malowniczy krajobraz w odcieniach żółci i czerwieni, który zachwyca, wzrusza i zachęca do refleksji.</p>
-                <p class="quote"><em>Drze­wa umierają inaczej niż ludzie. Drze­wa wyglądają tak, jak gdy­by cie­szyły się własną śmier­cią. Wpraw­dzie po­tem będzie wios­na i one od­kwitną zno­wu, ale ty wiesz, że nig­dy nie można mieć pew­ności. No i skąd o tym mają wie­dzieć drze­wa? Dla nich na pew­no każda je­sień jest ostatnia. </em> <br> <strong> Halina Poświatowska </strong> </p>
+                <p class="skills__text">Jesień – jedna z czterech podstawowych pór roku w przyrodzie, w strefie klimatu umiarkowanego. Jesień to czas zmian w przyrodzie. W świecie zwierząt jest to okres gromadzenia zapasów przed kolejną zimą lub przenoszenia się do cieplejszych stref klimatycznych. Zmieniające kolor liście przygotowują się do opadu, a najgrubsze części zielone roślin ulegają zdrewnieniu. Rośliny wieloletnie gromadzą substancje zapasowe w korzeniach, a jednoroczne doprowadzają do rozproszenia nasion i usychają. Wyjątkowe piękno jesiennej przyrody inspiruje do działań na rzecz jej ochrony.</p> 
+                <p class="skills__text">Charakteryzuje się <strong>umiarkowanymi</strong> temperaturami powietrza z malejącą średnią dobową, oraz (w przypadku Polski) stosunkowo <strong>dużym</strong> w skali roku opadem atmosferycznym. Pomimo obniżającej się temperatury powietrza, krótszych dni oraz stosunkowo dużego opadu atmosferycznego, to niezwykle urokliwa pora roku, nie bez przyczyny w Polsce często nazywana „złotą". Zmieniające kolor liście drzew tworzą malowniczy krajobraz w odcieniach żółci i czerwieni, który zachwyca, wzrusza i zachęca do refleksji.</p>
+                <p class="skills__quote"><em>Drze­wa umierają inaczej niż ludzie. Drze­wa wyglądają tak, jak gdy­by cie­szyły się własną śmier­cią. Wpraw­dzie po­tem będzie wios­na i one od­kwitną zno­wu, ale ty wiesz, że nig­dy nie można mieć pew­ności. No i skąd o tym mają wie­dzieć drze­wa? Dla nich na pew­no każda je­sień jest ostatnia. </em> <br> <strong> Halina Poświatowska </strong> </p>
             </section>
             <section id="contact" class="content contact">
                 <h1 class="title">Contact</h1>
                 <p>Łabędzie znane są ze swojego niekonwencjonalnego sposobu odchodzenia na zawsze. W chwili, gdy na horyzoncie zaczyna zarysowywać się ich koniec, znajdują największy głaz jaki zmieści im się w dziobie i połykają go. Spokojnie i powoli opadają na dno zostawiając znany im świat na rzecz tego podwodnego.</p>
                 
-                <div class="form-wrapper"> 
+                <div class="contact__form"> 
                     <h1 class="title">Formularz kontaktowy</h1>
-                    <form method="post" action="" id="contact_form" class="form-container">
-                        <div class="form-name">
+                    <form method="" action="" id="contact_form" class="contact__form-container">
+                        <div class="contact__form-name">
                             <label for="name">Imię i nazwisko:</label>
-                            <input type="text" name="name" id="name" class="formField" />
+                            <input type="text" name="name" id="name" class="contact__formField" />
                         </div>
 
-                        <div class="form-phone">
+                        <div class="contact__form-phone">
                             <label for="phone">Numer telefonu:</label>
-                            <input type="tel" name="phone" id="phone" class="formField" />
+                            <input type="tel" name="phone" id="phone" class="contact__formField" />
                         </div>
 
-                        <div class="form-email">
+                        <div class="contact__form-email">
                             <label for="email">Adres email:</label>
-                            <input type="email" name="email" id="email" class="formField" />
+                            <input type="email" name="email" id="email" class="contact__formField" />
                         </div>
             
-                        <div class="form-message">
+                        <div class="contact__form-message">
                             <label for="message">Treść wiadomości:</label>
-                            <textarea name="message" id="message" class="formField" placeholder="Sorry, I'm not working because this project is limited to HTML and CSS only." required></textarea>
+                            <textarea name="message" id="message" class="contact__formField" placeholder="Sorry, I'm not working because this project is limited to HTML and CSS only." required></textarea>
                         </div>
 
-                        <div class="form-submit">
+                        <div class="contact__form-submit">
                             <input type="submit" value="Wyślij">
                         </div>    
                     </form>
