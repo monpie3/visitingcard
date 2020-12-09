@@ -16,6 +16,11 @@ html {
   box-sizing: inherit;
 }
 
+textarea, input, button, select { 
+  font-family: inherit; 
+  font-size: inherit; 
+}
+
 body {
   background-image: url("./photo/beige-watercolor-23a.jpg");
   background-repeat: no-repeat;
@@ -137,7 +142,7 @@ body {
 
 /* Container */
 .events__gallery {
-  max-width: 800px;
+  max-width: 830px;
   display: flex;
   flex-flow: row wrap;
   justify-items: center;
@@ -148,8 +153,10 @@ body {
 
 .events__img1 {
   display: flex;
-  background-image: url("./photo/dog3.jpg");
+  background-image: url("./photo/1.jpg");
   background-size: cover;
+  background-position: bottom;
+  border-radius: 3px 3px 0 0; 
   justify-content: center;
   align-items: center;
   height: auto;
@@ -159,23 +166,27 @@ body {
 }
 
 .events__img2 {
-  background-image: url("./photo/dog2.jpg");
+  background-image: url("./photo/2.jpg");
   background-size: cover;
+  background-position: center;
+  border-radius: 0 0 0 3px; 
   display: flex;
   flex-direction: column;
   width: 50%;
   height: auto;
-  min-height: 200px;
+  min-height: 300px;
 }
 
 .events__img3 {
-  background-image: url("./photo/dog1.jpg");
+  background-image: url("./photo/3.jpg");
   background-size: cover;
+  background-position: center;
+  border-radius: 0 0 3px 0; 
   display: flex;
   flex-direction: column;
   width: 50%;
   height: auto;
-  min-height: 200px;
+  min-height: 300px;
 }
 
 .events__caption {
@@ -198,9 +209,9 @@ body {
 }
 
 /* Flex Item */
-.portfolio__column1,
-.portfolio__column2,
-.portfolio__column3 {
+.portfolio__project1,
+.portfolio__project2,
+.portfolio__project3 {
   flex: 1;
   background-color: var(--element-color);
   border-radius: 6px;
@@ -348,16 +359,11 @@ label {
   grid-area: submit;
 }
 
-.contact__formField {
-  font: inherit;
+.contact__form input, .contact__form textarea {
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
   margin: 3px 0 10px 0;
-  padding: 3px 0;
-}
-
-.contact__form input, .contact__form textarea {
-  padding: 10px;
 }
 
 .contact__form textarea {
@@ -369,7 +375,6 @@ input[type="submit"] {
   cursor: pointer;
   background-color: var(--background-color);
   border: 1px solid #ccc;
-  font-size: 1rem;
   padding: 8px 20px;
   border-radius: 3px;
 }
@@ -386,6 +391,10 @@ input[type="submit"]:hover {
 /* FOOTER */
 .page-footer {
   padding: 5px;
+}
+
+.page-footer a {
+  text-decoration: none;
 }
 
 @media all and (max-width: 950px) {
@@ -407,14 +416,14 @@ input[type="submit"]:hover {
     flex-flow: row wrap;
   }
 
-  .portfolio__column1,
-  .portfolio__column2,
-  .portfolio__column3 {
+  .portfolio__project1,
+  .portfolio__project2,
+  .portfolio__project3 {
     margin: 10px 10px;
     min-width: 300px;
   }
 
-  .portfolio__column2 {
+  .portfolio__project2 {
     order: -1;
   }
 
@@ -450,7 +459,7 @@ input[type="submit"]:hover {
 @media all and (max-width: 750px) {
 
   .events__img1 {
-    min-height: 200px;
+    min-height: 280px;
   }
 
   .events__img2 {
@@ -459,7 +468,7 @@ input[type="submit"]:hover {
 
   .events__img3 {
     width: 100%;
-    min-height: 250px;
+    min-height: 270px;
   }
 
   .skills__boxes {
@@ -474,6 +483,10 @@ input[type="submit"]:hover {
   .skills__box--background-color {
     left: 20px;
   }
+
+}
+
+@media all and (max-width: 630px) {
 
 }
 
@@ -549,25 +562,24 @@ input[type="submit"]:hover {
     padding-bottom: 10px;
   }
 
-
-  .portfolio__column1,
-  .portfolio__column2,
-  .portfolio__column3 {
+  .portfolio__project1,
+  .portfolio__project2,
+  .portfolio__project3 {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .portfolio__column1 {
-    margin-top: 20x;
+  .portfolio__project1 {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  .portfolio__column2 {
+  .portfolio__project2 {
     margin-top: 0px;
     margin-bottom: 20px;
   }
 
-  .portfolio__column3 {
+  .portfolio__project3 {
     margin-top: 20px;
     margin-bottom: 0px;
   }

@@ -1,6 +1,6 @@
 Projekt robiony w ramach kursu CodersCamp
 
-W projekcie nalezało zaprezentować praktyczną znajomość poniższych zagadnień związanych z HTML & CSS:
+W projekcie należało zaprezentować praktyczną znajomość poniższych zagadnień związanych z HTML & CSS:
 - [x] Box-model
 - [x] Kaskadowość CSS
 - [x] Selektory CSS
@@ -16,6 +16,6 @@ W projekcie nalezało zaprezentować praktyczną znajomość poniższych zagadni
 - [x] Responsive Web Design
 
 Dodatkowo: 
-- [ ] Metodologia BEM
+- [x] Metodologia BEM
 
-Ograniczeniem projektu było nie używanie JavaScriptu ani żadnego innego frameworka. Nie używano także gotowych bibliotek styli takich jak Bootstrap.
+Ograniczeniem narzuconym w ramach projektu było nieużywanie JavaScriptu ani żadnego innego frameworka. Nie używano także gotowych bibliotek styli takich jak Bootstrap.
